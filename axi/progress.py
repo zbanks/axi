@@ -68,8 +68,8 @@ class Bar(object):
             self.render_percent_complete(),
             self.render_value(),
             self.render_bar(),
-            self.render_elapsed_time(),
-            self.render_eta(),
+            "Elapsed:", self.render_elapsed_time(),
+            "Remaining:", self.render_eta(),
         ]
         return ' '.join(items)
 

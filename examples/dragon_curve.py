@@ -8,8 +8,9 @@ def main(iteration):
             turtle.circle(-1, 90, 36)
         else:
             turtle.circle(1, 90, 36)
-    drawing = turtle.drawing.rotate_and_scale_to_fit(11, 8.5, step=90)
-    axi.draw(drawing)
+
+    cli = axi.cli()
+    cli.draw(turtle.drawing)
 
 if __name__ == '__main__':
     main(12)

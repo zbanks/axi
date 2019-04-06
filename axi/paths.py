@@ -35,6 +35,9 @@ def simplify_paths(paths, tolerance):
     return [simplify_path(x, tolerance) for x in paths]
 
 def sort_paths(paths, reversable=True):
+    if len(paths) <= 1:
+        return paths
+
     first = paths[0]
     paths.remove(first)
     result = [first]

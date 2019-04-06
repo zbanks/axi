@@ -18,7 +18,7 @@ from .paths import (
 )
 from .planner import Planner
 from .turtle import Turtle
-from .util import draw, reset
+from .util import draw, reset, calibrate, cli
 
 from .drawing import (
     V3_SIZE,
